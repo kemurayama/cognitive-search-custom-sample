@@ -1,0 +1,32 @@
+{
+  "values": [
+      {
+          "recordId": "a1",
+          "data": {
+              "digit_count": 1
+          },
+          "errors": null,
+          "warnings": null
+      },
+      {
+          "recordId": "b5",
+          "data": {
+              "digit_count": 2
+          },
+          "errors": null,
+          "warnings": null
+      },
+      {
+          "recordId": "c3",
+          "data": {
+              "digit_count": null
+          },
+          "errors": null,
+          "warnings": [
+              {
+                  "message": "This record doesn't have content"
+              }
+          ]
+      }
+  ]
+}
