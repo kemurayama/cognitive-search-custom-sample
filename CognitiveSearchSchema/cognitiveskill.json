@@ -1,0 +1,26 @@
+{
+    "name": "your-test-skillset",
+    "description": "my custom skill to test",
+    "skills": [
+        {
+            "@odata.type": "#Microsoft.Skills.Custom.WebApiSkill",
+            "description": "This skill calls an Azure function to return uppercase",
+            "uri": "https://<YourFunctionName>.azurewebsites.net/api/digitcount?code=<YourFunctionKey>",
+            "httpHeaders": {
+            },
+            "context": "/document",
+            "inputs": [
+                {
+                    "name": "text",
+                    "source": "/document/content"
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "digit_count",
+                    "targetName": "digit_count"
+                }
+            ]
+        }
+    ]
+}

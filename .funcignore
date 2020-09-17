@@ -1,6 +1,7 @@
+.devcontainer
 .git*
+.venv
 .vscode
 local.settings.json
 test
-.venv
-.devcontainer
+CognitiveSearchSchema

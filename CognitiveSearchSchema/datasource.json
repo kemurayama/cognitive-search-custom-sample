@@ -1,0 +1,13 @@
+{   
+    "name" : "your-datasource",  
+    "description" :  "sample storage to upload content",  
+    "type" : "azureblob",
+    "credentials" :  
+        {
+            "connectionString" : "<YourStorageConnectionString>" 
+        },  
+    "container" : 
+        { 
+            "name" : "contents" 
+        }
+}

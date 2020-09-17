@@ -1,0 +1,48 @@
+{
+    "name": "your-test-indexer",
+    "dataSourceName": "<YourCognitiveSearchName>",
+    "targetIndexName": "your-test-index",
+    "skillsetName": "your-test-skillset",
+    "fieldMappings": [
+        {
+            "sourceFieldName": "metadata_storage_path",
+            "targetFieldName": "id",
+            "mappingFunction": {
+                "name": "base64Encode"
+            }
+        },
+        {
+            "sourceFieldName": "metadata_storage_path",
+            "targetFieldName": "url"
+        },
+        {
+            "sourceFieldName": "metadata_storage_name",
+            "targetFieldName": "file_name"
+        },
+        {
+            "sourceFieldName": "content",
+            "targetFieldName": "content"
+        },
+        {
+            "sourceFieldName": "metadata_storage_size",
+            "targetFieldName": "size"
+        },
+        {
+            "sourceFieldName": "metadata_storage_last_modified",
+            "targetFieldName": "last_modified"
+        }
+    ],
+    "outputFieldMappings": [
+        {
+            "sourceFieldName": "/document/digit_count",
+            "targetFieldName": "digit_count"
+        }
+    ],
+    "parameters": {
+        "maxFailedItems": -1,
+        "maxFailedItemsPerBatch": -1,
+        "configuration": {
+            "dataToExtract": "contentAndMetadata"
+        }
+    }
+}
