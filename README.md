@@ -3,7 +3,7 @@ Cognitive Search Custom Skill Sample
 
 ## License
 
-Copyright (c) 2020 kemurayam
+Copyright (c) 2020 kemurayama
 [MIT LICENSE](./LICENSE)
 
 - Template Functions are from [Azure/azure-functions-templates](https://github.com/Azure/azure-functions-templates)
