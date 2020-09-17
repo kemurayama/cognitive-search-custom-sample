@@ -1,6 +1,6 @@
 # Cognitve Search Custom Skill Sample
 
-This HttpTrigger Azure Function is for [Azure Cognitive Search Custom Skill](https://docs.microsoft.com/en-us/azure/search/cognitive-search-custom-skill-interface). 
+This HttpTrigger Azure Function is for [Azure Cognitive Search Custom Skill](https://docs.microsoft.com/en-us/azure/search/cognitive-search-custom-skill-interface).  
 Custom Skill in Cognitive Search enables us to create original skill to process content.  
 
 It is my sample custom skill to count digits from contents in Azure Blob Storage.  
